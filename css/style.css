@@ -1,0 +1,74 @@
+.mapTooltipInfo {
+  border-radius: 2px;
+  border: 1px solid #374636;
+  -webkit-box-shadow: inset 0 1px 1px #fff;
+  -webkit-box-shadow: inset 0 1px 1px #fff;
+  box-shadow: inset 0 1px 1px #fff;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.75;
+  -ms-filter: "alpha(opacity=75)";
+  filter: alpha(opacity=75);
+  padding: 6px 15px 6px 10px;
+  position: absolute;
+  font-size: 10px;
+  z-index: 10;
+  margin-left: -18px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.mapTooltipInfo p {
+  color: #96dd59;
+}
+
+.mapTooltipInfo:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #000 transparent transparent transparent;
+  top: 100%;
+  left: 10px;
+}
+
+.mapTooltipInfo strong {
+  font-weight: normal;
+}
+
+.mapTooltipInfo strong {
+  display: block;
+}
+
+.disable {
+  display: none;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.button-wrapper > button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#go-up {
+  background-color: #4caf50; /* Green */
+  margin-bottom: 10px;
+}
+#go-up:disabled,
+#go-up[disabled] {
+  background-color: #4caf4f9d; /* Green */
+}
